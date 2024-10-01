@@ -4,12 +4,11 @@ let computerScore = 0;
 playGame()
 
 
-function playGame() {
-    playRound();
-    playRound();
-    playRound();
-    playRound();
-    playRound();
+function playGame(times = 1) {
+    while (times <= 5) {
+        times++
+        playRound()
+    }
     console.log("Game over!\nYour score: " + humanScore + "\nComputer score: " + computerScore)
 }
 
